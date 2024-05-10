@@ -21,7 +21,16 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [1334],
+	"forwardPorts": [
+		1334
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "cargo run --target wasm32-unknown-unknown",
