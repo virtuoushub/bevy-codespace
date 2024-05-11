@@ -31,6 +31,8 @@ That said, this is a working development environment that can be a suitable repl
 > [!CAUTION]
 > The less resources you use to power the codespace, the longer compile times take in general. It works with the minimum cores available, but you will take awhile.
 
+## Random Notes
+
 ---
 
 ```sh
