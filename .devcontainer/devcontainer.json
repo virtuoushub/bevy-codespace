@@ -9,12 +9,12 @@
 		"dockerfile": "../Dockerfile"
 	},
 	"features": {
-		"ghcr.io/lee-orr/rusty-dev-containers/cargo-binstall:0": {},
-		"ghcr.io/lee-orr/rusty-dev-containers/cargo-nextest:0": {},
-		"ghcr.io/lee-orr/rusty-dev-containers/cargo-watch:0": {},
-		"ghcr.io/lee-orr/rusty-dev-containers/wasm-bindgen-cli:0": {},
-		"ghcr.io/lee-orr/rusty-dev-containers/wasm-server-runner:0": {},
-		"ghcr.io/lee-orr/rusty-dev-containers/wasm32-unknown-unknown:0": {}
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-binstall:0": "0.1.0",
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-nextest:0": "0.1.0",
+		"ghcr.io/lee-orr/rusty-dev-containers/cargo-watch:0": "0.1.0",
+		"ghcr.io/lee-orr/rusty-dev-containers/wasm-bindgen-cli:0": "0.1.0",
+		"ghcr.io/lee-orr/rusty-dev-containers/wasm-server-runner:0": "0.1.0",
+		"ghcr.io/lee-orr/rusty-dev-containers/wasm32-unknown-unknown:0": "0.1.0"
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
