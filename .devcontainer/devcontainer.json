@@ -8,6 +8,7 @@
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 		"dockerfile": "../Dockerfile"
 	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/lee-orr/rusty-dev-containers/cargo-binstall:0": {},
 		"ghcr.io/lee-orr/rusty-dev-containers/cargo-nextest:0": {},
@@ -17,14 +18,20 @@
 		"ghcr.io/lee-orr/rusty-dev-containers/wasm32-unknown-unknown:0": {}
 	},
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [1334],
+	"forwardPorts": [
+		1334
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
 
 	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "cargo run --target wasm32-unknown-unknown",
+	"postCreateCommand": "cargo c && cargo b && cargo binstall --no-confirm wasm-server-runner"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

@@ -30,3 +30,25 @@ That said, this is a working development environment that can be a suitable repl
 
 > [!CAUTION]
 > The less resources you use to power the codespace, the longer compile times take in general. It works with the minimum cores available, but you will take awhile.
+
+## Random Notes
+
+---
+
+```sh
+apt-get update
+apt-get upgrade
+DEBIAN_FRONTEND=noninteractive apt-get install -yq g++ pkg-config libx11-dev libasound2-dev libudev-dev libxkbcommon-x11-0
+cargo c
+cargo b
+```
+
+---
+
+```sh
+cargo binstall wasm-server-runner
+```
+
+---
+
+https://github.com/lee-orr/rusty-dev-containers/issues/29 ?
