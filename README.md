@@ -36,7 +36,7 @@ That said, this is a working development environment that can be a suitable repl
 ```sh
 apt-get update
 apt-get upgrade
-apt-get install g++ pkg-config libx11-dev libasound2-dev libudev-dev libxkbcommon-x11-0
+DEBIAN_FRONTEND=noninteractive apt-get install -yq g++ pkg-config libx11-dev libasound2-dev libudev-dev libxkbcommon-x11-0
 cargo c
 cargo b
 ```

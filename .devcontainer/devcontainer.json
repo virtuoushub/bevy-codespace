@@ -33,7 +33,7 @@
 	},
 
 	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "cargo run --target wasm32-unknown-unknown",
+	"postCreateCommand": "cargo c && cargo b && cargo binstall wasm-server-runner",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
